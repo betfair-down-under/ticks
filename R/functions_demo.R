@@ -1,3 +1,5 @@
+library(dplyr)
+
 source("functions.R")
 
 bf_ticks_between(odds_1 = 1.5, odds_2 = 1.5)

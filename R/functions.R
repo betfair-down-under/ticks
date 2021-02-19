@@ -5,18 +5,8 @@
 #' If the odds value is an existing Betfair tick it will return its own value regardless of parameter floor
 #' Function returns a numeric
 #'
-#' @param odds Decimal odds that you want to convert to nearest Betfair Tick
-#' @param floor Binary value to specify if you want the nearest Tick Below odds. Defaults to FALSE
-#'
-#' @import dplyr
-#'
-#' @keywords betfair
-#' @keywords odds
-#' @keywords tick
-#'
-#' @export
-#' @examples
-#' bf_price_tick <- bf_odds_map(odds = 6.35, floor = FALSE)
+#' argument odds: Decimal odds that you want to convert to nearest Betfair Tick
+#' argument floor: Binary value to specify if you want the nearest Tick Below odds. Defaults to FALSE
 
 
 bf_odds_map <- function(odds,
@@ -122,18 +112,9 @@ bf_odds_map <- function(odds,
 #' For example, the ticks between 2.00 and 1.96 is 4, and similarly the ticks between 10.5 and 11.5 is -2
 #' Function returns a numeric
 #'
-#' @param odds_1 Decimal odds (Does not have to be an existing Betfair Tick)
-#' @param odds_2 Decimal odds (Does not have to be an existing Betfair Tick)
-#'
-#' @import dplyr
-#'
-#' @keywords betfair
-#' @keywords odds
-#' @keywords tick
-#'
-#' @export
-#' @examples
-#' ticks_between <- bf_ticks_between(odds_1 = 6.35, odds_2 = 6.58)
+#' arugment odds_1: Decimal odds (Does not have to be an existing Betfair Tick)
+#' arugment odds_2 Decimal odds (Does not have to be an existing Betfair Tick)
+
 
 
 bf_ticks_between <- function(odds_1, odds_2) {
